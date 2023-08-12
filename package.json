@@ -6,7 +6,7 @@
 		"cy:stg-open": "cypress open --env envSelected=staging",
 		"cy:dev-open": "cypress open --env envSelected=dev",
 		"cy:local-open": "cypress open --env envSelected=local",
-		"html-report": "cypress run --spec cypress/e2e/tests/**/specs/**.cy.js --env envSelected=staging --browser chrome --headless"
+		"cy:stg-report": "cypress run --spec cypress/e2e/tests/**/specs/**.cy.js --env envSelected=staging --browser chrome --headless"
 	},
 	"devDependencies": {
 		"cypress": "^12.17.3",
