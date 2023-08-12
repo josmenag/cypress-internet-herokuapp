@@ -1,0 +1,30 @@
+[
+	{
+		"lastName": "Bach",
+		"firstName": "Frank",
+		"email": "fbach@yahoo.com",
+		"dues": "$51.00",
+		"website": "http://www.frank.com"
+	},
+	{
+		"lastName": "Doe",
+		"firstName": "Jason",
+		"email": "jdoe@hotmail.com",
+		"dues": "$100.00",
+		"website": "http://www.jdoe.com"
+	},
+	{
+		"lastName": "Smith",
+		"firstName": "John",
+		"email": "jsmith@gmail.com",
+		"dues": "$50.00",
+		"website": "http://www.jsmith.com"
+	},
+	{
+		"lastName": "Conway",
+		"firstName": "Tim",
+		"email": "tconway@earthlink.net",
+		"dues": "$50.00",
+		"website": "http://www.timconway.com"
+	}
+]

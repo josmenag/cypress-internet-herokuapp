@@ -1,0 +1,19 @@
+{
+	"scripts": {
+		"cy:open": "cypress open",
+		"cy:run": "cypress run",
+		"cy:update-snapshots": "cypress run --env updateSnapshot=true",
+		"cy:stg-open": "cypress open --env envSelected=staging",
+		"cy:dev-open": "cypress open --env envSelected=dev",
+		"cy:local-open": "cypress open --env envSelected=local",
+		"html-report": "cypress run --spec cypress/e2e/tests/**/specs/**.cy.js --env envSelected=staging --browser chrome --headless"
+	},
+	"devDependencies": {
+		"cypress": "^12.17.3",
+		"cypress-mochawesome-reporter": "^3.5.1",
+		"mochawesome": "^7.1.3"
+	},
+	"dependencies": {
+		"prettier": "^3.0.1"
+	}
+}
