@@ -1,0 +1,23 @@
+version: '3.2'
+
+services:
+  cypress-edge:
+    container_name: 'cypress-edge'
+    image: 'cypress-heroku-project'
+    volumes:
+      - ./ci-output/edge:/app/cypress/screenshots
+    command: npm run cy:run:stg:edge
+
+  cypress-chrome:
+    container_name: 'cypress-chrome'
+    image: 'cypress-heroku-project'
+    volumes:
+      - ./ci-output/chrome:/app/cypress/screenshots
+    command: npm run cy:run:stg:chrome
+
+  cypress-firefox:
+    container_name: 'cypress-firefox'
+    image: 'cypress-heroku-project'
+    volumes:
+      - ./ci-output/firefox:/app/cypress/screenshots
+    command: npm run cy:run:stg:firefox

@@ -3,11 +3,10 @@ const dev = require('./dev.json')
 const local = require('./local.json')
 
 exports.getEnv = function (envSelected) {
-	if (envSelected == 'staging') {
-		return staging
-	} else if (envSelected == 'dev') {
-		return dev
-	} else if (envSelected == 'local') {
-		return local
+	let environmentList = {
+		staging: staging,
+		dev: dev,
+		local: local,
 	}
+	return environmentList[envSelected] || environmentList.staging
 }
